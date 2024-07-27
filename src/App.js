@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 function App() {
   return (
-    <main>
+    <main className="main">
       <BrowserRouter>
         <NavBar />
         <Routes>
