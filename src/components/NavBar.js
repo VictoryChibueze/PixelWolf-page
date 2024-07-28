@@ -1,34 +1,64 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
+import { GiWolfHowl } from "react-icons/gi";
+import { HiHome } from "react-icons/hi";
+import { BsBagDash } from "react-icons/bs";
+import { LuArrowUpDown } from "react-icons/lu";
+import { IoSettingsOutline } from "react-icons/io5";
+import { HiUserGroup } from "react-icons/hi2";
+import { FcBullish } from "react-icons/fc";
+import { CgDanger } from "react-icons/cg";
 
 function NavBar() {
   return (
     <nav className="nav-bar">
-      <section>
-        <h3 className="logo">Wolf Pixel</h3>
+      <section className="section">
+        <h3 className="logo">
+          <GiWolfHowl />
+          <span>Wolf Pixel</span>
+        </h3>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <HiHome />
+              <span>Home</span>
+            </Link>
           </li>
           <li>
-            <Link to="/assets">Assets</Link>
+            <Link to="/assets">
+              <BsBagDash />
+              <span>Assets</span>
+            </Link>
           </li>
           <li>
-            <Link to="/livetrade">Live Trade</Link>
+            <Link to="/livetrade">
+              <LuArrowUpDown /> <span>Live Trade</span>
+            </Link>
           </li>
           <li>
-            <Link to="/forum">Forum</Link>
+            <Link to="/forum">
+              <HiUserGroup />
+              <span>Forum</span>
+            </Link>
           </li>
           <li>
-            <Link to="/reports">Reports</Link>
+            <Link to="/reports">
+              <FcBullish />
+              <span>Reports</span>
+            </Link>
           </li>
           <li>
-            <Link to="/setting">Setting</Link>
+            <Link to="/setting">
+              <IoSettingsOutline />
+              <span>Setting</span>
+            </Link>
           </li>
         </ul>
       </section>
-      <button className="nav-btn">Guide</button>
+      <button className="nav-btn">
+        <CgDanger /> <span>Guide</span>
+      </button>
     </nav>
   );
 }

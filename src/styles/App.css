@@ -12,7 +12,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: auto 3fr 1fr;
+  grid-template-columns: minmax(25rem, 15%) 3fr 1fr;
 
   height: 100vh;
 }
