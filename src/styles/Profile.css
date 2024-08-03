@@ -1,7 +1,9 @@
 .profile {
   grid-column: 3/4;
   background-color: rgba(252, 252, 252, 0.9);
+  border-left: 1px solid #dad6d6;
 }
+
 .account-info h3 {
   color: #444;
   font-size: 2.45rem;
@@ -64,4 +66,39 @@ table td {
 .asset table tbody td {
   color: rgb(63, 63, 63);
   font-size: 1.7rem;
+}
+.asset table tbody td span {
+  color: rgb(168, 168, 246);
+}
+.profile a {
+  color: rgb(72, 72, 229);
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+}
+.asset {
+  margin-bottom: 2rem;
+}
+.profile a:hover {
+  text-decoration: underline;
+}
+.profile button {
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  background-color: rgba(57, 57, 193, 0.7);
+  border-radius: 1rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.profile button:hover {
+  background-color: rgb(24, 24, 156);
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+  padding-left: 1rem;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Profile.css";
 import { Link } from "react-router-dom";
+import { LuArrowUpDown } from "react-icons/lu";
 function Profile() {
   return (
     <section className="profile">
@@ -42,22 +43,37 @@ function Profile() {
           <tbody>
             <tr>
               <td>Bitcoin</td>
-              <td>23.5 BTC</td>
+              <td>
+                23.5 <span>BTC</span>
+              </td>
             </tr>
             <tr>
               <td>Ethereum</td>
-              <td>180 ETH</td>
+              <td>
+                180 <span>ETH</span>
+              </td>
             </tr>
             <tr>
               <td>Doge</td>
-              <td>239,500 DOGE</td>
+              <td>
+                239,500 <span>DOGE</span>
+              </td>
             </tr>
             <tr>
               <td>Ripple</td>
-              <td>65,100 XRP</td>
+              <td>
+                65,100 <span>XRP</span>
+              </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <Link to="/assets">More assets...</Link>
+      <div className="btn-container">
+        <button>
+          <LuArrowUpDown />
+          Trade Now
+        </button>
       </div>
     </section>
   );
