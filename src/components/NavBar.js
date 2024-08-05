@@ -5,7 +5,7 @@ import { GiWolfHowl } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { BsBagDash } from "react-icons/bs";
 import { LuArrowUpDown } from "react-icons/lu";
-import { IoSettingsOutline } from "react-icons/io5";
+import { SiRocket } from "react-icons/si";
 import { HiUserGroup } from "react-icons/hi2";
 import { FcBullish } from "react-icons/fc";
 import { CgDanger } from "react-icons/cg";
@@ -49,9 +49,9 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/setting">
-              <IoSettingsOutline />
-              <span>Setting</span>
+            <Link to="/launchpad">
+              <SiRocket />
+              <span>Launchpad</span>
             </Link>
           </li>
         </ul>
